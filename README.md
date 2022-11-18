@@ -6,7 +6,9 @@ Reference: "Guo X, Yu K, Cao F, et al. Error-aware Markov blanket learning for c
 "EAMB.m" is main function.
 
 function [MB,time] = EAMB(Data,data_type,target,alpha,k_or)
+
 % Input :
+
 % Data is the data matrix, and rows represent the number of samples and columns represent the number of nodes.
 % If Data is a discrete dataset, the value in Data should start from 1.
 
@@ -21,5 +23,7 @@ function [MB,time] = EAMB(Data,data_type,target,alpha,k_or)
 
 
 % Output:
+
 % MB is the Markov blanket of the target.
+
 % time is the runtime of the algorithm.
