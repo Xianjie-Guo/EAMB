@@ -1,7 +1,7 @@
 # EAMB
 Error-Aware Markov Blanket Learning for Causal Feature Selection
 
-Reference: Guo X, Yu K, Cao F, et al. Error-aware Markov blanket learning for causal feature selection[J]. Information Sciences, 2022, 589: 849-877.
+Reference: "Guo X, Yu K, Cao F, et al. Error-aware Markov blanket learning for causal feature selection[J]. Information Sciences, 2022, 589: 849-877".
 
 "EAMB.m" is main function.
 
