@@ -1,0 +1,1 @@
+[MB,time] = EAMB(Data,'con',10,0.01,0.05);
