@@ -41,10 +41,9 @@ Cross-validation
 
         Data = horzcat(data(train_indices,:),labels(train_indices));
         Data = Data+1;
-        ns = max(Data);
         [~,p] = size(Data);
 
-        [features,~] = EAMB(Data, 'dis', p, 0.01, 0.05);
+        [features,~] = EAMB(Data, 'dis', p, 0.01, 0.05); % The p-th variable is the label variable.
     end
 
 References
