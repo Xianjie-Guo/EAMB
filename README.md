@@ -10,22 +10,22 @@ function [MB,time] = EAMB(Data,data_type,target,alpha,k_or)
 
 INPUT:
 
-      Data is the data matrix, and rows represent the number of samples and columns represent the number of nodes. If Data is a discrete dataset, the value in Data should start from 1.
+    Data is the data matrix, and rows represent the number of samples and columns represent the number of nodes. If Data is a discrete dataset, the value in Data should start from 1.
 
-      data_type='dis' represents discrete data, and data_type='con' denotes continues data.
+    data_type='dis' represents discrete data, and data_type='con' denotes continues data.
 
-      target is the index of target node.
+    target is the index of target node.
 
-      alpha is the significance level, e.g., 0.01 or 0.05.
+    alpha is the significance level, e.g., 0.01 or 0.05.
 
-      k_or is recall coefficient, and k_or is greater than or equal to 0 and less than or equal to 1. Generally, k_or is taken as [0.05, 0.25]. The higher the dimension of the dataset, the smaller the value of k_or.
+    k_or is recall coefficient, and k_or is greater than or equal to 0 and less than or equal to 1. Generally, k_or is taken as [0.05, 0.25]. The higher the dimension of the dataset, the smaller the value of k_or.
 
 
 OUTPUT:
 
-      MB is the Markov blanket of the target.
+    MB is the Markov blanket of the target.
 
-      time is the runtime of the algorithm.
+    time is the runtime of the algorithm.
 
 References
 ==========
