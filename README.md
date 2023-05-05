@@ -34,8 +34,7 @@ Example
     load('./data/leukemia/data_labels.mat');
     load('./data/leukemia/cv10_indices.mat');
 
-Cross-validation
-
+    % Cross-validation
     for i = 1:10
         test_indices = (indices == i); train_indices = ~test_indices;
 
