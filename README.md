@@ -27,6 +27,25 @@ OUTPUT:
 
     time is the runtime of the algorithm.
 
+Example
+========
+clear;
+clc;
+load('./data/leukemia/data_labels.mat');
+load('./data/leukemia/cv10_indices.mat');
+
+% Cross-validation
+for i = 1:10
+    test_indices = (indices == i); train_indices = ~test_indices;
+
+    Data = horzcat(data(train_indices,:),labels(train_indices));
+    Data = Data+1;
+    ns = max(Data);
+    [~,p] = size(Data);
+
+    [features,~] = EAMB(Data, 'dis', p, 0.01, 0.05);
+end
+
 References
 ==========
 [1] Guo X, Yu K, Cao F, et al. Error-aware Markov blanket learning for causal feature selection[J]. Information Sciences, 2022, 589: 849-877.
