@@ -3,6 +3,7 @@ Error-Aware Markov Blanket Learning for Causal Feature Selection
 Usage
 ==========
 "EAMB.m" is main function.
+Note that the current code has only been debugged on Matlab (2018a) with a 64-bit Windows system.
 
 -------------------------------------------------------------------------------------------------------------------
 
